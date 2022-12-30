@@ -9,7 +9,7 @@
 
       ![captura2](/gifs/Captura2.png)
    
-3. En el árbol de comportamiento añado "SaveLastPlayerPosition" dentro de "Flee" (momento en que sale huyendo del jugador):
+3. En el árbol de comportamiento añado "SetLastKnownTargetDestination" dentro de "Flee" (momento en que sale huyendo del jugador):
        
       ![captura3](/gifs/Captura3.png)
        
