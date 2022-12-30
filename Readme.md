@@ -1,28 +1,20 @@
-## Práctica 4: Eventos y Movimiento rectilíneo.
-## Objetivo: Resolver las siguientes actividades.
+## Práctica 3: Modificación del proyecto RobotGuard.
+## Objetivo: Modificar el proyecto de RobotGuard para hacer el que el NPC vuelva a la última posición donde vio al jugador antes de huir. Debe volver después de que su salud se haya recuperado por encima de 40.
 
-1. Crear un script para mover al objeto jugador con los ejes Horizontal y Vertical.
+1. He creado 2 Tasks dentro del script AI.cs, primero "SaveLastKnownTargetPosition", se guarda la posición del jugador en el momento en que el NPC hace "Flee":
 
-      ![gif ejercicio 1](/gifs/Ejercicio1.gif)
+      ![captura1](/gifs/Captura1.png)
       
-2. Implementar una UI que permita configurar con qué velocidad te moverás: turbo o normal. También debe mostar la cantidad de objetos recolectados y si chocas con alguno especial restar fuerza. 
+2. La segunda Task "SetLastKnownTargetDestination" selecciona como destino la posición guardada:
 
-      ![gif ejercicio 2_1](/gifs/Ejercicio2_1.gif)
-      ![gif ejercicio 2_2](/gifs/Ejercicio2_2.gif)
-      ![gif ejercicio 2_4](/gifs/Ejercicio2_4.gif)
-
-3. Agregar a tu escena un objeto que al ser recolectado por el jugador haga que otro objetos obstáculos se desplacen de su trayectoria. 
+      ![captura2](/gifs/Captura2.png)
+   
+3. En el árbol de comportamiento añado "SaveLastPlayerPosition" dentro de "Flee" (momento en que sale huyendo del jugador):
        
-      ![gif ejercicio 2_3](/gifs/Ejercicio2_3.gif)
+      ![captura3](/gifs/Captura3.png)
        
-4. Agrega un objeto que te teletransporte a otra zona de la escena.
+4. Resultado:
 
-      ![gif ejercicio 4](/gifs/Ejercicio4.gif)
+      ![gif ejercicio 5](/gifs/gif.gif)
       
-5. Agrega un personaje que se dirija hacia un objetivo estático en la escena.
 
-      ![gif ejercicio 5](/gifs/Ejercicio5.gif)
-      
-6. Agrega un personaje que siga el movimiento del jugador. 
-
-      ![gif ejercicio 6](/gifs/Ejercicio6.gif)
